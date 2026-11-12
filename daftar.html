@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daftar | JOKMASOK.CO</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/daftar.css">
+    <script defer src="js/pages/daftar.js"></script>
+</head>
+
+<body class="login-page register-page">
+    <main class="login-card">
+        <div class="login-art">
+            <img src="img/login-illustration.png" alt="">
+
+            <a class="login-brand" href="index.html">
+                <img
+                    class="login-brand-wordmark"
+                    src="img/JOK.png"
+                    alt="JOKMASOK.CO"
+                >
+            </a>
+        </div>
+
+        <a class="login-close" href="index.html" aria-label="Kembali ke beranda">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+                <path d="m6 6 12 12M18 6 6 18"/>
+            </svg>
+        </a>
+
+        <section class="login-panel" aria-labelledby="register-title">
+            <div class="login-content">
+                <h1 id="register-title">Daftar Akun</h1>
+
+                <form id="register-form" method="post">
+                    <div class="login-field">
+                        <label for="register-name">Nama lengkap</label>
+                        <div class="login-input">
+                            <input id="register-name" name="name" type="text"
+                                   placeholder="Masukkan nama lengkap"
+                                   autocomplete="name" required>
+                        </div>
+                    </div>
+
+                    <div class="login-field">
+                        <label for="register-email">Email</label>
+                        <div class="login-input">
+                            <input id="register-email" name="email" type="email"
+                                   placeholder="nama@contoh.com"
+                                   autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="login-field">
+                        <label for="register-password">Kata sandi</label>
+                        <div class="login-input">
+                            <input id="register-password" name="password" type="password"
+                                   placeholder="Buat kata sandi"
+                                   autocomplete="new-password" required>
+                            <button class="login-reveal" id="register-reveal"
+                                    type="button" aria-controls="register-password"
+                                    aria-label="Tampilkan kata sandi"
+                                    aria-pressed="false" hidden>
+                                Lihat
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="login-field">
+                        <label for="register-confirm">Konfirmasi kata sandi</label>
+                        <div class="login-input">
+                            <input id="register-confirm" name="password_confirmation"
+                                   type="password" placeholder="Ulangi kata sandi"
+                                   autocomplete="new-password" required>
+                        </div>
+                    </div>
+
+                    <div class="login-field">
+                        <label for="register-phone">Nomor HP (opsional)</label>
+                        <div class="login-input">
+                            <input
+                                id="register-phone"
+                                name="phone"
+                                type="tel"
+                                autocomplete="tel"
+                                placeholder="Contoh: 081234567890"
+                            >
+                        </div>
+                    </div>
+                    
+                    <button class="login-submit" id="register-submit" type="submit" disabled>
+                        Daftar
+                    </button>
+                    <p class="login-status" id="register-status" role="status"></p>
+                </form>
+
+                <p class="login-register">
+                    Sudah punya akun? <a href="login.html">Masuk di sini</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
